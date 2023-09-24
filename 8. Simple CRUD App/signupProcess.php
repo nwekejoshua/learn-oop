@@ -1,0 +1,15 @@
+<?php
+if(isset($_POST['submit'])){
+    require_once('signupConfig.php');
+    $sc = new SignupConfig();
+
+    $sc->setfirstName($_POST['firstname']);
+    $sc->setlastName($_POST['lastname']);
+    $sc->setAddress($_POST['address']);
+    $sc->insertData();
+
+    echo "<script>alert('Data Saved Succesfully');document.location='data.php'</script>";
+}
+
+
+?>
