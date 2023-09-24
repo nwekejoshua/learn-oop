@@ -1,7 +1,7 @@
 <?php
 require_once 'Person.php';
 
-class Inheritance extends Person
+class Employee extends Person
 {
     public $position = 'Front-end Developer';
     public $salary = '$50000';
